@@ -1,0 +1,73 @@
+.line{
+    height: 6px;
+    width: 500px;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: linear-gradient(to right, #002f52, #006e9a, #00abf0);
+    animation: animar 3s linear infinite;
+}
+.line:hover{
+    background: linear-gradient(to left, #002f52, #006e9a, #00abf0);
+    }
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blob{
+    background: url(../imagens/julio-foto.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+.blob:hover{
+    transition: all ease 1s;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+@keyframes animar{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(35deg);
+    }
+}
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+@media (max-width:600px){
+    .line{
+        width: 250px;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .blob{
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+} 

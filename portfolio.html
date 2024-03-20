@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Júlio Mello</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="javascript.js/matrix.js" defer></script>
+    <script src="javascript.js/toggle.js" defer></script>
+    <script src="javascript.js/swiper-cube.js" defer></script>
+       
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <section class="box">
+            <nav class="navbar">
+                <a href="index.html" class="btn-nav">
+                    <i class="fa-solid fa-house" title="Home"></i>
+                    <span class="btn-text">Home</span>
+                </a>
+                <a href="sobre-mim.html" class="btn-nav">
+                    <i class="fa-solid fa-user-tie" title="Sobre mim"></i>
+                    <span class="btn-text">Sobre mim</span>
+                </a>
+                <a href="portfolio.html" class="btn-nav">
+                    <i class="fa-solid fa-tv" title="Portfolio"></i>
+                    <span class="btn-text">Portfolio</span>
+                </a>
+                <input type="checkbox" name="btn-toggle" id="btn-toggle">
+                <label for="btn-toggle">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+            </nav>
+            <div class="swiper-case">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="imagens/img1.png" />
+                    <div class="content">
+                       <a href="https://github.com/Julio-Mello/didatico/tree/main/android-cev" target="_blank" rel="noopener noreferrer nofollow" class="btn-cod">Código<a href="https://julio-mello.github.io/didatico/android-cev" target="_blank" rel="noopener noreferrer nofollow" class="btn-proj">Projeto</a></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imagens/img2.png" />
+                    <div class="content">
+                        <a href="https://github.com/Julio-Mello/didatico/tree/main/barbearia-alura" target="_blank" rel="noopener noreferrer nofollow" class="btn-cod">Código<a href="https://julio-mello.github.io/didatico/barbearia-alura" target="_blank" rel="noopener noreferrer nofollow" class="btn-proj">Projeto</a></a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imagens/img3.png" />
+                    <div class="content">
+                        <a href="https://github.com/Julio-Mello/didatico/tree/main/parallax" target="_blank" rel="noopener noreferrer nofollow" class="btn-cod">Código<a href="https://julio-mello.github.io/didatico/parallax/index.html" target="_blank" rel="noopener noreferrer nofollow" class="btn-proj">Projeto</a></a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imagens/img4.png" />
+                    <div class="content">
+                        <a href="https://github.com/Julio-Mello/didatico/tree/main/alurabooks" target="_blank" rel="noopener noreferrer nofollow" class="btn-cod">Código<a href="https://julio-mello.github.io/didatico/alurabooks/index.html" target="_blank" rel="noopener noreferrer nofollow" class="btn-proj">Projeto</a></a>
+                     </div>
+                  </div>
+                </div> 
+                <div class="swiper-pagination"></div>  
+            </div>
+</body>
+</html>

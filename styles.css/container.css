@@ -1,0 +1,111 @@
+.container{
+    border-radius: 20px;
+    background: var(--cor-container);
+}
+.dark .container{
+    background: var(--dark-container);
+}
+.box{
+    height: 80vh;
+    width: 80vw;
+    padding: 10px;
+    margin: 0.8rem;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
+    -15px -15px 20px #fffb;
+    border-radius: calc(20px - 6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-box);
+}
+.dark .box{
+    background: var(--dark-box);
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.25),
+    -15px -15px 20px rgba(255,255,255,0.1);
+}
+.canvas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    align-items: start;
+}
+.circle{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: var(--cor-box);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+.dark .circle{
+    background: var(--dark-box);
+}
+.logo{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background: url(../imagens/logo-light.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+.dark .logo{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background: url(../imagens/logo-dark.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+.slogan{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: animateText 25s linear infinite;
+}
+.slogan span{
+    position: absolute;
+    left: 50%;
+    display: block;
+    transform-origin: 0 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.dark .slogan span{
+    color: var(--cor-titulo);
+}
+.cage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+@keyframes animateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@media (max-width: 600px){
+    .logo{
+        height: 70px;
+        width: 70px;
+        align-self: center;
+        transform: none;
+    }
+}
+@media (300px <= width <= 900px){
+    .box{
+        justify-content: flex-start;
+    } 
+}
+

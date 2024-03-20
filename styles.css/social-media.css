@@ -1,0 +1,35 @@
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+}
+.btn-sm{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-branco);
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    border-radius: 50%;
+    box-shadow: inset 0px -5px 5px rgba(0,0,0,0.2), 
+                    0 5px 10px rgba(0,0,0,0.2),
+                    0 10px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.dark .btn-sm{
+    box-shadow: inset 3px -3px 3px var(--cor-brilho), 
+        0 5px 10px rgba(255,255,255,0.1),
+        0 10px 15px rgba(255,255,255,0.1);
+}
+.fa-brands, .fa-solid{
+    color: var(--cor-titulo);  
+}
+.fa-brands:hover{
+    color: var(--cor-subtitulo);
+}
+.fa-solid:hover{
+    color: var(--cor-subtitulo);
+}  

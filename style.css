@@ -1,0 +1,95 @@
+@import url("styles.css/container.css");
+
+@import url("styles.css/texts.css");
+
+@import url("styles.css/navbar.css");
+
+@import url("styles.css/social-media.css");
+
+@import url("styles.css/blob.css");
+
+@import url("styles.css/scrollbar.css");
+
+@import url("styles.css/cube.css");
+
+@import url("styles.css/buttons.css");
+
+@import url("styles.css/circle-text.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'tanire';
+    src: url('fontes/TANIRE\ Trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'batman';
+    src: url('fontes/batmfa__.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'klingon';
+    src: url('fontes/klingon\ font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --font-titulo: 'tanire', sans-serif;
+    --font-subtitulo: 'batman', monospace;
+    --font-texto: 'kodemono', monospace;
+    --font-line: 'klingon', sans-serif;
+
+    --cor-branca: #fff;
+    --cor-container: #edf1f4;
+    --cor-box: #eaeef0;
+    --cor-sombra: #fffb;
+    --cor-titulo: #00abf0;
+    --cor-subtitulo: #006e9a;
+    --cor-texto: #034374;
+    --cor-brilho: #c8d7e1;
+    --cor-background: #0B182C;
+
+    --dark-container: #272b2e;
+    --dark-box: #33393e;
+    --dark-texto: #08b0f2;
+
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: 500;
+    background: var(--cor-branca);
+    font-family: var(--font-texto);
+    color: var(--cor-texto);
+}
+.dark{
+    --dark-container: #272b2e;
+    --dark-box: #33393e;
+    --dark-texto: #08b0f2;
+}
+#matrix{  
+    position: absolute;
+    z-index: -1000;
+    height: 100%;
+    width: 100%;
+}

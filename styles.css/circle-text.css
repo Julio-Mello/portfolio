@@ -1,0 +1,51 @@
+.capsule{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capsule .circle{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 6px solid var(--cor-box);
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 1),
+    5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.capsule .circle::before{
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: url(../imagens/caricatura.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    border: 2px solid var(--cor-box);
+    z-index: 1;
+}
+.capsule .circle .inner-circle{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#002f52, #006e9a, #00abf0);
+    border-radius: 50%;
+    filter: blur(5px);
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width:400px){
+    .capsule{
+        margin-right: 0;
+    }
+}
