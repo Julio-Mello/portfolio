@@ -1,40 +1,40 @@
-@import url("styles.css/container.css");
+@import url("styles/container.css");
 
-@import url("styles.css/texts.css");
+@import url("styles/texts.css");
 
-@import url("styles.css/navbar.css");
+@import url("styles/navbar.css");
 
-@import url("styles.css/social-media.css");
+@import url("styles/social-media.css");
 
-@import url("styles.css/blob.css");
+@import url("styles/blob.css");
 
-@import url("styles.css/scrollbar.css");
+@import url("styles/scrollbar.css");
 
-@import url("styles.css/cube.css");
+@import url("styles/cube.css");
 
-@import url("styles.css/buttons.css");
+@import url("styles/buttons.css");
 
-@import url("styles.css/circle-text.css");
+@import url("styles/circle-text.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 @font-face {
     font-family: 'tanire';
-    src: url('fontes/TANIRE\ Trial.ttf') format('truetype');
+    src: url('fonts/TANIRE\ Trial.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'batman';
-    src: url('fontes/batmfa__.ttf') format('truetype');
+    src: url('fonts/batmfa__.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'klingon';
-    src: url('fontes/klingon\ font.ttf') format('truetype');
+    src: url('fonts/klingon\ font.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,9 +57,6 @@
     --dark-container: #272b2e;
     --dark-box: #33393e;
     --dark-texto: #08b0f2;
-
-
-
 }
 *{
     margin: 0;

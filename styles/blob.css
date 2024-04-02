@@ -22,7 +22,7 @@
     align-items: center;
 }
 .blob{
-    background: url(../imagens/julio-foto.jpg);
+    background: url(../imgs/julio-foto.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;

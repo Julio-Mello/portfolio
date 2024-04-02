@@ -48,7 +48,7 @@
     position: absolute;
     height: 75px;
     width: 75px;
-    background: url(../imagens/logo-light.png);
+    background: url(../imgs/logo-light.png);
     background-size: cover;
     border-radius: 50%;
 }
@@ -56,7 +56,7 @@
     position: absolute;
     height: 75px;
     width: 75px;
-    background: url(../imagens/logo-dark.png);
+    background: url(../imgs/logo-dark.png);
     background-size: cover;
     border-radius: 50%;
 }

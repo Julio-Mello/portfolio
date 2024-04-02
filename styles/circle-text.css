@@ -20,7 +20,7 @@
     content: '';
     position: absolute;
     inset: 20px;
-    background: url(../imagens/caricatura.png);
+    background: url(../imgs/caricatura.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
