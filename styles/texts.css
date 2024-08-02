@@ -39,6 +39,16 @@
 .dark .text-about{
     color: var(--dark-texto);
 }
+.text-skill{
+    width: 80%;
+    margin-top: 25px;
+    text-align:justify;
+    text-indent: 1.5rem;
+    line-height: 1.2rem;
+}
+.dark .text-skill{
+    color: var(--dark-texto);
+}
 @keyframes degrade{
     0%{
         background-position-x: 0%;
@@ -69,9 +79,15 @@
     .text-home{
         width: 100%;
     }
+    .text-skill{
+        width: 100%;
+    }
 }
 @media (min-width:1000px){
     .text-about{
         width: 90%;
+    }
+    .text-skill{
+        width: 30%;
     }
 }
