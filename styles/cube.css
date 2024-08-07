@@ -3,7 +3,7 @@
     height: 380px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     margin-left: -150px;
     margin-top: -150px;
   }
@@ -48,10 +48,6 @@
       margin-top: -150px;
     }
   }
-  @media (min-width:1000px){
-    .swiper-case{
-      top: 55%;
-    }
-}
+ 
 
   
