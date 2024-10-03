@@ -48,6 +48,15 @@
       margin-top: -150px;
     }
   }
- 
+  @media (min-width:1024px){
+    .swiper-case{
+      height: 280px;
+      width: 200px;
+      left: 50%;
+      top: 65%;
+      margin-left: -100px;
+      margin-top: -150px;
+    }
+  }
 
   
